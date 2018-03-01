@@ -44,8 +44,8 @@ $fecha = date ("Y-m-d");
 echo '<span class="form-control"> Bienvenido '.$_SESSION['username'].' Fecha '.$fecha.'<a href="cerrar_sesion.php" class="">Salir</a></span>';
 echo  '<br>';
 // DATOS PARA EL MENU DINAMINO
-$datop = $_GET[piso]; 
-$datoh = $_GET[habitacion]; 
+$datop = $_GET['piso']; 
+$datoh = $_GET['habitacion']; 
 $sqlh = "SELECT h_numero, h_id FROM habitaciones WHERE h_numero = '$datoh'";
 $sqlp = "SELECT ps_numero, ps_id FROM piso WHERE ps_id = '$datop'";
 

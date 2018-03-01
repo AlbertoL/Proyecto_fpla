@@ -40,7 +40,7 @@
 <?php
 include('php/conexion.php'); 
 $fecha = date ("j/n/Y");
-$idp = $_GET[piso]; 
+$idp = $_GET['piso']; 
 
 //CONSULTA NUMERO DE PISOS
 $sql = "SELECT ps_numero FROM piso WHERE ps_id = '$idp'";
